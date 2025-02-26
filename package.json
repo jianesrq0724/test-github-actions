@@ -8,7 +8,7 @@
     "chai": "^4.3.4",
     "ethereum-waffle": "^3.3.0",
     "ethers": "^5.4.1",
-    "hardhat": "^2.22.5",
+    "hardhat": "^2.22.19",
     "solc": "^0.8.3",
     "solidity-coverage": "^0.7.20",
     "ts-node": "^9.1.1",
@@ -23,5 +23,17 @@
     "hardhat-abi-exporter": "^2.10.0",
     "mysql": "^2.18.1",
     "ts-generator": "^0.1.1"
-  }
+  },
+  "name": "test-github-actions",
+  "version": "1.0.0",
+  "description": "export http_proxy=http://127.0.0.1:7890 export https_proxy=http://127.0.0.1:7890",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }

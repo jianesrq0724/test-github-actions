@@ -1,10 +1,10 @@
 name: Hardhat Test
 
 on:
-  push:
-    branches: [ main ]
   pull_request:
     branches: [ main ]
+    # 可选：仅在 PR 创建、更新或重新打开时触发
+    types: [ opened, synchronize, reopened ]
 
 jobs:
   test:

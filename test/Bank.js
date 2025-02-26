@@ -25,6 +25,7 @@ describe("TestBankContract", function () {
     const finalDepositValue = await bank.deposits(addr1.address);
     finalDepositValue = finalDepositValue - 1;
     expect(finalDepositValue).to.equal(depositValue);
+    
   });
 
   // 测试取款功能

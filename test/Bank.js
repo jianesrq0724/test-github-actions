@@ -24,10 +24,12 @@ describe("TestBankContract", function () {
     await tx.wait();
     const finalDepositValue = await bank.deposits(addr1.address);
     expect(finalDepositValue).to.equal(depositValue);
+
   });
 
   // 测试取款功能
   it("should allow withdrawals and reset balances", async function () {
+    
     const initBalance = await addr1.getBalance();
     const tx = await connectAddr1.withdraw();
     const receipt = await tx.wait();

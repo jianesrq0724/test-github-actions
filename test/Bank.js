@@ -23,9 +23,9 @@ describe("TestBankContract", function () {
     const tx = await connectAddr1.deposit({ value: depositValue });
     await tx.wait();
     const finalDepositValue = await bank.deposits(addr1.address);
-    finalDepositValue = finalDepositValue - 1;
+    finalDepositValue = finalDepositValue;
     expect(finalDepositValue).to.equal(depositValue);
-    
+
   });
 
   // 测试取款功能
